@@ -24,13 +24,11 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   // Load theme from localStorage on mount
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme') as Theme;
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     
     if (savedTheme) {
       setThemeState(savedTheme);
-    } else if (prefersDark) {
-      setThemeState('dark');
     }
+    // If no saved theme, default to 'light' (already set in useState)
   }, []);
 
   // Apply theme to document
