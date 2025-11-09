@@ -1,5 +1,5 @@
 
-  # Automated Inventory Control System (Mobile)
+  # Automated Inventory Control System
 
   This is an Inventory control for small business owners 
 
