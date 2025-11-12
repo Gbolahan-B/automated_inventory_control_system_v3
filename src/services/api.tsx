@@ -2,7 +2,11 @@ import { projectId, publicAnonKey } from '../utils/supabase/info';
 import { supabase } from '../utils/supabase/client';
 import { createErrorResponse, AppError } from '../utils/errorHandling';
 
+<<<<<<< HEAD
 const API_BASE = `https://${projectId}.supabase.co/functions/v1/make-server-2804bbaf`;
+=======
+const API_BASE = `https://${projectId}.supabase.co/functions/v1/make-server-e78ed76b`;
+>>>>>>> 17d7207a04a6699e95ff6001118789eefbc1f7e7
 
 interface Product {
   id: string;

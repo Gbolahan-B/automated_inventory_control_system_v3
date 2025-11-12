@@ -11,7 +11,10 @@ import { Reports } from './components/Reports';
 import { Settings } from './components/Settings';
 import { ProductDetails } from './components/ProductDetails';
 import { EditProduct } from './components/EditProduct';
+<<<<<<< HEAD
 import { Chatbot } from './components/Chatbot';
+=======
+>>>>>>> 17d7207a04a6699e95ff6001118789eefbc1f7e7
 import { apiService, Product } from './services/api';
 import { ErrorBoundary } from './components/ErrorDisplay';
 
@@ -322,7 +325,10 @@ function AppContent() {
       onSearchChange={setSearchQuery}
     >
       {renderCurrentPage()}
+<<<<<<< HEAD
       <Chatbot />
+=======
+>>>>>>> 17d7207a04a6699e95ff6001118789eefbc1f7e7
     </Layout>
   );
 }

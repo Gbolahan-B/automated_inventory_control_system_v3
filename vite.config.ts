@@ -5,6 +5,10 @@
 
   export default defineConfig({
     plugins: [react()],
+<<<<<<< HEAD
+=======
+    base: './', // ✅ Works for both GitHub Pages and Vercel
+>>>>>>> 17d7207a04a6699e95ff6001118789eefbc1f7e7
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
       alias: {
@@ -53,7 +57,11 @@
     },
     build: {
       target: 'esnext',
+<<<<<<< HEAD
       outDir: 'build',
+=======
+      outDir: 'dist',
+>>>>>>> 17d7207a04a6699e95ff6001118789eefbc1f7e7
     },
     server: {
       port: 3000,

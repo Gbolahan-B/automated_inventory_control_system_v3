@@ -32,7 +32,11 @@ if (!supabaseUrl || !supabaseServiceKey) {
 const supabase = createClient(supabaseUrl, supabaseServiceKey);
 
 // Health check endpoint - no authentication required
+<<<<<<< HEAD
 app.get('/make-server-2804bbaf/health', (c) => {
+=======
+app.get('/make-server-e78ed76b/health', (c) => {
+>>>>>>> 17d7207a04a6699e95ff6001118789eefbc1f7e7
   console.log('Health check endpoint called');
   return c.json({ 
     status: 'ok', 
@@ -42,13 +46,21 @@ app.get('/make-server-2804bbaf/health', (c) => {
 });
 
 // Add a simple test endpoint to verify server is running
+<<<<<<< HEAD
 app.get('/make-server-2804bbaf/test', (c) => {
+=======
+app.get('/make-server-e78ed76b/test', (c) => {
+>>>>>>> 17d7207a04a6699e95ff6001118789eefbc1f7e7
   console.log('Test endpoint called');
   return c.json({ message: 'Server is running!' });
 });
 
 // Debug endpoint to check authentication headers
+<<<<<<< HEAD
 app.get('/make-server-2804bbaf/debug-auth', async (c) => {
+=======
+app.get('/make-server-e78ed76b/debug-auth', async (c) => {
+>>>>>>> 17d7207a04a6699e95ff6001118789eefbc1f7e7
   const authHeader = c.req.header('Authorization');
   const allHeaders = {};
   
@@ -109,7 +121,11 @@ async function getAuthenticatedUserId(c: any): Promise<string | null> {
 }
 
 // Get all products for the authenticated user
+<<<<<<< HEAD
 app.get('/make-server-2804bbaf/products', async (c) => {
+=======
+app.get('/make-server-e78ed76b/products', async (c) => {
+>>>>>>> 17d7207a04a6699e95ff6001118789eefbc1f7e7
   try {
     const userId = await getAuthenticatedUserId(c);
     if (!userId) {
@@ -125,7 +141,11 @@ app.get('/make-server-2804bbaf/products', async (c) => {
 });
 
 // Add new product for the authenticated user
+<<<<<<< HEAD
 app.post('/make-server-2804bbaf/products', async (c) => {
+=======
+app.post('/make-server-e78ed76b/products', async (c) => {
+>>>>>>> 17d7207a04a6699e95ff6001118789eefbc1f7e7
   try {
     const userId = await getAuthenticatedUserId(c);
     if (!userId) {
@@ -153,7 +173,11 @@ app.post('/make-server-2804bbaf/products', async (c) => {
 });
 
 // Update product details for the authenticated user
+<<<<<<< HEAD
 app.put('/make-server-2804bbaf/products/:id', async (c) => {
+=======
+app.put('/make-server-e78ed76b/products/:id', async (c) => {
+>>>>>>> 17d7207a04a6699e95ff6001118789eefbc1f7e7
   try {
     const userId = await getAuthenticatedUserId(c);
     if (!userId) {
@@ -190,7 +214,11 @@ app.put('/make-server-2804bbaf/products/:id', async (c) => {
 });
 
 // Update product stock for the authenticated user
+<<<<<<< HEAD
 app.put('/make-server-2804bbaf/products/:id/stock', async (c) => {
+=======
+app.put('/make-server-e78ed76b/products/:id/stock', async (c) => {
+>>>>>>> 17d7207a04a6699e95ff6001118789eefbc1f7e7
   try {
     const userId = await getAuthenticatedUserId(c);
     if (!userId) {
@@ -225,7 +253,11 @@ app.put('/make-server-2804bbaf/products/:id/stock', async (c) => {
 });
 
 // Delete product for the authenticated user
+<<<<<<< HEAD
 app.delete('/make-server-2804bbaf/products/:id', async (c) => {
+=======
+app.delete('/make-server-e78ed76b/products/:id', async (c) => {
+>>>>>>> 17d7207a04a6699e95ff6001118789eefbc1f7e7
   try {
     const userId = await getAuthenticatedUserId(c);
     if (!userId) {
@@ -248,7 +280,11 @@ app.delete('/make-server-2804bbaf/products/:id', async (c) => {
 });
 
 // Auth signup route
+<<<<<<< HEAD
 app.post('/make-server-2804bbaf/auth/signup', async (c) => {
+=======
+app.post('/make-server-e78ed76b/auth/signup', async (c) => {
+>>>>>>> 17d7207a04a6699e95ff6001118789eefbc1f7e7
   try {
     const { email, password, name } = await c.req.json();
     
@@ -305,7 +341,11 @@ app.post('/make-server-2804bbaf/auth/signup', async (c) => {
 });
 
 // Get user notifications
+<<<<<<< HEAD
 app.get('/make-server-2804bbaf/notifications', async (c) => {
+=======
+app.get('/make-server-e78ed76b/notifications', async (c) => {
+>>>>>>> 17d7207a04a6699e95ff6001118789eefbc1f7e7
   try {
     const userId = await getAuthenticatedUserId(c);
     if (!userId) {
@@ -327,7 +367,11 @@ app.get('/make-server-2804bbaf/notifications', async (c) => {
 });
 
 // Mark notification as read
+<<<<<<< HEAD
 app.put('/make-server-2804bbaf/notifications/:id/read', async (c) => {
+=======
+app.put('/make-server-e78ed76b/notifications/:id/read', async (c) => {
+>>>>>>> 17d7207a04a6699e95ff6001118789eefbc1f7e7
   try {
     const userId = await getAuthenticatedUserId(c);
     if (!userId) {
@@ -364,7 +408,11 @@ app.put('/make-server-2804bbaf/notifications/:id/read', async (c) => {
 
 
 // Initialize with sample data for the authenticated user
+<<<<<<< HEAD
 app.post('/make-server-2804bbaf/init-sample-data', async (c) => {
+=======
+app.post('/make-server-e78ed76b/init-sample-data', async (c) => {
+>>>>>>> 17d7207a04a6699e95ff6001118789eefbc1f7e7
   try {
     const userId = await getAuthenticatedUserId(c);
     if (!userId) {

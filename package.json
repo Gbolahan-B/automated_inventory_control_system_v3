@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
       "name": "AICS",
+=======
+      "name": "automated_inventory_control_system_v3",
+>>>>>>> 17d7207a04a6699e95ff6001118789eefbc1f7e7
       "version": "0.1.0",
       "private": true,
       "dependencies": {
@@ -55,7 +59,11 @@
       "devDependencies": {
             "@types/node": "^20.10.0",
             "@vitejs/plugin-react-swc": "^3.10.2",
+<<<<<<< HEAD
             "vite": "^6.4.1"
+=======
+            "vite": "^6.3.6"
+>>>>>>> 17d7207a04a6699e95ff6001118789eefbc1f7e7
       },
       "scripts": {
             "dev": "vite",

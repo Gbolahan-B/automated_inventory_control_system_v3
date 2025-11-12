@@ -1,7 +1,7 @@
 
-  # AICS
+  # Automated Inventory Control System
 
-  This is a code bundle for AICS. The original project is available at https://www.figma.com/design/BtKT8XOPxLY6BUxafMpIEu/AICS.
+  This is an Inventory control for small business owners 
 
   ## Running the code
 

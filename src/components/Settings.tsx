@@ -5,14 +5,21 @@ import { Button } from './ui/button';
 import { Label } from './ui/label';
 import { Separator } from './ui/separator';
 import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
+<<<<<<< HEAD
 import { User, Settings as SettingsIcon, Bell, Lock, Shield, Monitor, ChevronRight, HelpCircle } from 'lucide-react';
+=======
+import { User, Settings as SettingsIcon, Bell, Lock, Shield, Monitor, ChevronRight } from 'lucide-react';
+>>>>>>> 17d7207a04a6699e95ff6001118789eefbc1f7e7
 import { toast } from 'sonner@2.0.3';
 import { ChangePassword } from './settings/ChangePassword';
 import { TwoFactorAuth } from './settings/TwoFactorAuth';
 import { SessionManagement } from './settings/SessionManagement';
 import { NotificationSettings } from './settings/NotificationSettings';
 import { ProfileInfo } from './settings/ProfileInfo';
+<<<<<<< HEAD
 import { Help } from './Help';
+=======
+>>>>>>> 17d7207a04a6699e95ff6001118789eefbc1f7e7
 
 interface SettingsProps {
   currentSection: string;
@@ -64,8 +71,11 @@ export function Settings({ currentSection, onSectionChange }: SettingsProps) {
       return <NotificationSettings onBack={handleBackToOverview} />;
     case 'profile':
       return <ProfileInfo onBack={handleBackToOverview} />;
+<<<<<<< HEAD
     case 'help':
       return <Help onBack={handleBackToOverview} />;
+=======
+>>>>>>> 17d7207a04a6699e95ff6001118789eefbc1f7e7
     default:
       // Show overview/main settings page
       break;
@@ -173,6 +183,7 @@ export function Settings({ currentSection, onSectionChange }: SettingsProps) {
           </CardContent>
         </Card>
 
+<<<<<<< HEAD
         {/* Help Section */}
         <Card className="cursor-pointer hover:bg-gray-50 transition-colors" onClick={() => handleSectionNavigation('help')}>
           <CardContent className="p-6">
@@ -193,6 +204,8 @@ export function Settings({ currentSection, onSectionChange }: SettingsProps) {
           </CardContent>
         </Card>
 
+=======
+>>>>>>> 17d7207a04a6699e95ff6001118789eefbc1f7e7
         {/* System Settings */}
         <Card>
           <CardHeader>
